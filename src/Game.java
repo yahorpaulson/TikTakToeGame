@@ -66,14 +66,14 @@ public class Game extends Thread {
         int col = pos % 3;
         if (board[row][col] == '\0') {
             board[row][col] = currentPlayer;
-            outX.println("Move successful. Your turn.");
-            outO.println("Move successful. Your turn.");
+            outX.println("Move successful");
+            outO.println("Move successful");
             isX = !isX;
         } else {
             if (currentPlayer == 'X') {
-                outX.println("Invalid move. Please choose an empty cell.");
+                outX.println("Invalid move.");
             } else {
-                outO.println("Invalid move. Please choose an empty cell.");
+                outO.println("Invalid move");
             }
         }
     }

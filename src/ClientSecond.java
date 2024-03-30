@@ -4,13 +4,13 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-public class ClientO extends Thread {
+public class ClientSecond {
     private static final String SERVER_IP = "127.0.0.1";
     private static final int SERVER_PORT = 12345;
 
     public static void main(String[] args) {
-        ClientO clientO = new ClientO();
-        clientO.start();
+        ClientSecond clientSecond = new ClientSecond();
+        clientSecond.start();
     }
 
     public void start() {
@@ -33,5 +33,4 @@ public class ClientO extends Thread {
             e.printStackTrace();
         }
     }
-
 }
